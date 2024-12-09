@@ -1,0 +1,183 @@
+/* burası daha yumuşak geçişler için scroll da*/
+html{
+    scroll-behavior: smooth;
+    background-color:rgb(173, 173, 173);
+}
+
+/* projenin her yerinde geçerli olucak önemli yerler 
+kendimiz padding ve marigin vericez aynısı diğerleri içinde geçerli
+o yüzden 0 ve none verdik */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*
+body{
+     buraya font-family gelicek font belirlendikten sonra
+}*/
+
+/* yüklenilcek görsellerin boyutu*/
+.Arcane_jinx{
+    height: 600px;
+    width: 600px;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+section{
+    /* ana sayfayı sectionlara ayırdım genel sectionlara özellik verilcek
+    burda*/
+    padding: 100px 0 ;
+    background: rgb(110, 102, 102);
+}
+/* title alttan 30px boşluk bıraktırdım*/
+.section_title{
+    margin-bottom: 15px;
+}
+/* title özellikleri*/
+.section_title h2{
+    margin-top: 15px;
+    color: #fff;
+}
+
+/* ------  HEADER ------- */
+
+/* header özellikleri z-index headırın üstte kalması için yazılar 
+çakışmasın diye */
+header{
+    background: rgb(61, 0, 0);
+    border-bottom: 5px solid rgb(149, 1, 1);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.nav_links{
+    display: flex;
+}
+
+input[type="text"] {
+    position: relative;
+    width: 100%; 
+    color: rgb(0, 0, 0);
+    border-radius: 0.5rem; 
+    border: 1px solid black; 
+    outline: none; 
+  }
+  
+  @media (min-width: 200px) {
+    input[type="text"] {
+      padding: 0.1rem 1rem; 
+      width: 55%; 
+    }
+  }
+  
+  @media (min-width: 200pxx) {
+    input[type="text"] {
+      width: 40%; 
+    }
+  }
+  
+
+.nav_links li label{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    
+}
+
+.nav_links li a{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.nav_links li a:hover{
+    background:rgb(255, 0, 0) ;
+}
+
+.logo h2 a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ANA SAYFA */
+
+.anasayfa{
+    background-image: url('C:\Users\hunha\ODEV\IMAGE\Arcane_poster.jpg');
+}
+
+.Parent_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+}
+
+
+/* responsive tasarımda daha rahat mobil görünümü ayarlıyoruz */
+
+.Child_anasayfa{
+    flex-basis: 45%;
+}
+.Child_anasayfa h1{
+    font-size: 50px;
+    color: #81936996 ;
+}
+
+.span_child{
+    color: blanchedalmond;
+}
+
+.Child_anasayfa p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    background: rgb(61, 0, 0);
+    padding: 12px 18px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid rgb(61, 0, 0);
+    font-weight: 700 ;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    background:rgb(255, 0, 0) ;
+    letter-spacing: 5px;
+}
+
+.sıralama{
+    
+    margin-left: 25px;
+    color: #fff;
+    padding: 5px 15px;
+}
+.sıralama li{
+    margin-top: 5px;
+    font-size: x-large;
+}
