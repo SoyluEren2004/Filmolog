@@ -1,3 +1,3 @@
 # Filmolog
-# Eren , Esma , Cenker, Hilal by
+# Eren , Esma , Cenker, Hilal 
 Web Prog final project
