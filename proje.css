@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    background-color: #000000;
+}
+.navbar{
+    background-color:#000000;
+    height:50px;
+    color: white;
+}
+.navbar-layout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding :0 50px;
+
+}
+.logo{
+font-size: 25px;
+padding-top: 10px;
+color:#950101
+
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    column-gap: 25px;
+    padding-top: 10px;
+    
+}
+.menu-item{
+    cursor:pointer;
+
+}
+
+.menu-item:hover{
+    font-weight:bold;
+
+}
+
+.menu-item.active{
+    font-weight: bold;
+
+}
+
+
+.profile-content{
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 10px;
+    column-gap: 10px;
+}
+
+.profile-photo{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    object-fit: fill;
+    border-radius: 40%;
+
+
+}
+
+
+.sidebar{
+    background-color: #000000;
+    color: white;
+    height: 100%;  
+    width: 50px;
+    top:0;
+    position: fixed;
+    display: flex;
+
+    flex-direction: column;
+    padding-top: 100px;
+    row-gap: 50px;
+    align-items:center;
+
+}
+.sidebar icon{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.container{
+
+    padding: 100px;
+    min-height:auto ;
+
+}
+ 
+
+.movie-list-item{
+    margin-right: 300px;
+    
+
+
+}
+.movie-list-item:hover .movie-list-item-image{
+    transform: scale(auto);
+
+}
+
+.movie-list-item-image{
+    padding-left: 15px;
+
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+.movie-list-item-title{
+    color: white
+}
+.movie-list-item-text{
+    color: white;
+}
+.featured-week{
+    color:#FF0000
+}
