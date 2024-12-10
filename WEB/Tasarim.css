@@ -1,0 +1,38 @@
+html,
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #3D0000;
+    padding: 0px;
+    text-align: left;
+    color: white;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 130px;
+    background-color: #950101;
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    margin-inline: auto;
+    font-size: x-large;
+}
+
+h4 {
+    background-color: #3D0000;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 550px;
+    height: 240px;
+    margin-inline: auto;
+    text-align: center;
+    color: white;
+}
