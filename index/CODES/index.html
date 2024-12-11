@@ -6,17 +6,28 @@
     <title>Filmolog</title>
     <link rel="stylesheet" href="C:\Users\hunha\index\CODES\Pretty.css">
     <link rel="icon" href="C:\Users\hunha\index\IMAGE\tv.svg" type="image/x-icon" />
+    <head>
+       
+    </head>
+    
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="logo">
-                <h2><a href="#">Filmolog</a></h2>
+                <img class="Logo" src="C:\Users\hunha\index\IMAGE\Logo.jpg" alt="Logo kırmızı yuvarlak">
+                <img class="MenuSvg" src="C:\Users\hunha\index\IMAGE\icons8-menu.svg" alt="MenuSvg görüntüsü">
+                <a class="menu-link" href="#Menü">Menü</a>
             </div>
+            
+            
             <ul class="nav_links">
-                <li><a href="#movies">Movies</a></li>
-                <li><a href="#series">Series</a></li>
-                <li><input type="text" placeholder="Search"></li>
+                <li><input type="text" class="searchBorder" placeholder=" Ara... "><button type="submit" class="btnSearch">🔍</button></li>
+                <li><a href="#WatchList">İzleme listem</a></li>
+                <li><a href="#Sign in">Giriş yap</a></li>
+                <li><a href="#Profile">Profil</a></li>
+                <li><img class="profilLogo"src="C:\Users\hunha\index\IMAGE\ProfilLogo.jpeg" alt="Kullanıcı profil logo kurbağa"></li>
+                
             </ul>
         </div>
     </header>
@@ -28,7 +39,7 @@
             <div class="Child_anasayfa">
                 <h1> İzliyceğin film veya dizi hakkında bilgi sahibi mi olmak istiyorun ? <br> <span class="span_child"> Ne bekliyorsun?</span> </h1>
                 <p> En iyi puanlama sistemi ve harika bilgiler için</p>
-                <button class="btn"> TIKLA </button>
+                <button class="btn"> KAYIT OL </button>
             </div>
             <div class="Child_anasayfa">
                 <img class="Arcane_jinx" src="C:\Users\hunha\index\IMAGE\Arcane_poster.jpg" alt=" arcane splash art" >
@@ -38,44 +49,41 @@
 
      <!-- Movies And Series  -->
 
-    <section id="Movies">
+     <section id="Movies">
         <div class="section_title">
             <h2> MOVİES </h2>
         </div>
-        <div >
-            <div >
-                <ul class="sıralama">
-                    <li>Köyden İndim Şehire</li>
-                    <li>Örümcek Adam: Eve Dönüş Yok</li>
-                    <li>Yeraltı</li>
-                </ul>
-            </div>
-             <div class="section_title">
-                <h2> SERİES </h2>
-            </div>
-            <div >
-                <div >
-                    <ul class="sıralama">
-                        <li>The walking dead</li>
-                        <li>breaking bad</li>
-                        <li>Arcane</li>
-                    </ul>
-                </div>
-                <div class="section_title">
-                    <h2> TOP 6 </h2>
-                </div>
-                <div>
-                    <div >
-                        <ul class="sıralama">
-                            <li>The walking dead</li>
-                            <li>breaking bad</li>
-                            <li>Arcane</li>
-                            <li>Köyden İndim Şehire</li>
-                            <li>Örümcek Adam: Eve Dönüş Yok</li>
-                            <li>Yeraltı</li>
-                        </ul>
-                    </div>
-        </div>
+        <ul class="sıralama">
+            <li><img src="path_to_image/arcane_image.jpg" alt="Arcane Görsel"> Köyden İndim Şehire</li>
+            <li><img src="path_to_image/spider_image.jpg" alt="Örümcek Adam Görsel"> Örümcek Adam: Eve Dönüş Yok</li>
+            <li><img src="path_to_image/underground_image.jpg" alt="Yeraltı Görsel"> Yeraltı</li>
+        </ul>
     </section>
+    
+    <section id="Series">
+        <div class="section_title">
+            <h2> SERİES </h2>
+        </div>
+        <ul class="sıralama">
+            <li><img src="path_to_image/twd_image.jpg" alt="The Walking Dead Görsel"> The Walking Dead</li>
+            <li><img src="path_to_image/breakingbad_image.jpg" alt="Breaking Bad Görsel"> Breaking Bad</li>
+            <li><img src="C:\Users\hunha\index\IMAGE\Arcane_poster.jpg" alt="Arcane Görsel"> Arcane</li>
+        </ul>
+    </section>
+    
+    <section id="Top6">
+        <div class="section_title">
+            <h2> TOP 6 </h2>
+        </div>
+        <ul class="sıralama">
+            <li><img src="path_to_image/twd_image.jpg" alt="The Walking Dead Görsel"> The Walking Dead</li>
+            <li><img src="path_to_image/breakingbad_image.jpg" alt="Breaking Bad Görsel"> Breaking Bad</li>
+            <li><img src="path_to_image/arcane_image.jpg" alt="Arcane Görsel"> Arcane</li>
+            <li><img src="path_to_image/koydenindim_image.jpg" alt="Köyden İndim Şehire Görsel"> Köyden İndim Şehire</li>
+            <li><img src="path_to_image/spider_image.jpg" alt="Örümcek Adam Görsel"> Örümcek Adam: Eve Dönüş Yok</li>
+            <li><img src="path_to_image/yeraltı_image.jpg" alt="Yeraltı Görsel"> Yeraltı</li>
+        </ul>
+    </section>
+    
 </body>
 </html>
