@@ -21,6 +21,7 @@ body{
 }*/
 
 /* yüklenilcek görsellerin boyutu*/
+
 .Arcane_jinx{
     height: 600px;
     width: 600px;
@@ -29,7 +30,38 @@ body{
 img{
     width: 100%;
 }
+.profilLogo{
+    height: 25px;
+    width: 25px;
+}
 
+.logo {
+    display: flex; /* İçerikleri yatay hizalamak için */
+    align-items: center; /* Dikey ortalama */
+    gap: 10px; /* Elemanlar arasındaki boşluk */
+}
+.Logo{
+    width: 50px;
+    height: 50px;
+}
+.MenuSvg {
+    width: 24px; /* SVG dosyasının genişliği */
+    height: 24px; /* SVG dosyasının yüksekliği */
+}
+.menu-link {
+    margin-left: 10px; /* Logo ile Menü bağlantısı arasındaki boşluk */
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
 
 
 section{
@@ -73,29 +105,43 @@ header{
     display: flex;
 }
 
-input[type="text"] {
-    position: relative;
-    width: 100%; 
-    color: rgb(0, 0, 0);
-    border-radius: 0.5rem; 
-    border: 1px solid black; 
-    outline: none; 
-  }
+.search-textBox{
+    width: 40vw;
+    height: 4vh;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%,-400%);
+}
+
+.btnSearch{
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.searchBorder{
+    border-radius: 50px;
+    
+}
+
+@media (min-width: 768px) {
+    input[type="text"] {
+        width: 350%; /* Daha geniş ekranlarda biraz daha geniş */
+        
+    }
+}
+
   
   @media (min-width: 200px) {
     input[type="text"] {
-      padding: 0.1rem 1rem; 
+      padding: 0.5rem 1rem; 
       width: 55%; 
     }
   }
   
-  @media (min-width: 200pxx) {
-    input[type="text"] {
-      width: 40%; 
-    }
-  }
-  
-
 .nav_links li label{
     margin-left: 15px;
     color: #fff;
@@ -106,18 +152,13 @@ input[type="text"] {
 .nav_links li a{
     margin-left: 15px;
     color: #fff;
-    padding: 5px 15px;
+    padding: 2px 25px;
     border-radius: 10px;
     transition: all .5s ease-in-out;
 }
 
 .nav_links li a:hover{
     background:rgb(255, 0, 0) ;
-}
-
-.logo h2 a {
-    color: #fff;
-    text-transform: uppercase;
 }
 
 /* ANA SAYFA */
@@ -171,13 +212,28 @@ input[type="text"] {
     letter-spacing: 5px;
 }
 
-.sıralama{
-    
+.sıralama {
     margin-left: 25px;
     color: #fff;
     padding: 5px 15px;
+    list-style: none;
 }
-.sıralama li{
+
+.sıralama li {
+    display: flex;  /* Flexbox ile resim ve metni yan yana yerleştirir */
+    align-items: center;  /* Dikeyde ortalar */
     margin-top: 5px;
     font-size: x-large;
+}
+
+.sıralama li img {
+    width: 50px;  /* Görselin genişliği */
+    height: 50px;  /* Görselin yüksekliği */
+    margin-right: 10px;  /* Resim ile metin arasına boşluk ekler */
+}
+
+/* profile css */
+.Profile{
+    height: 300px;
+    width: 200px;
 }
