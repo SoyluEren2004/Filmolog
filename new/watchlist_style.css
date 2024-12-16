@@ -3,29 +3,86 @@ body{
     margin: 0 auto;
     overflow:scroll;
 }
-
-#cubuk{
-    position: relative;
+/* HEADER */
+/* header özellikleri z-index headırın üstte kalması için yazılar 
+çakışmasın diye */
+header{
+    background: rgb(61, 0, 0);
+    border-bottom: 5px solid rgb(149, 1, 1);
+    position: fixed;
     width: 100%;
-    height: 60px;
-    background-color: rgb(61, 0,0);
+    z-index: 5;
 }
 
-#namelabel{
-    color: white;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 2%;
-    left: 5%;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
 }
+
+.nav_links{
+    display: flex;
+}
+
+input[type="text"] {
+    position: relative;
+    width: 100%; 
+    color: rgb(0, 0, 0);
+    border-radius: 0.5rem; 
+    border: 1px solid black; 
+    outline: none; 
+  }
+  
+  @media (min-width: 200px) {
+    input[type="text"] {
+      padding: 0.1rem 1rem; 
+      width: 55%; 
+    }
+  }
+  
+  @media (min-width: 200pxx) {
+    input[type="text"] {
+      width: 40%; 
+    }
+  }
+  
+
+.nav_links li label{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    
+}
+
+.nav_links li a{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.nav_links li a:hover{
+    background:rgb(255, 0, 0) ;
+}
+
+.logo h2 a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* izleme Listeniz adlı baslık/label */
 #baslik{
     color: white;
     top: 50%;
     left: 50%;
-    transform: translate(5%, 200%);
+    transform: translate(5%, 280%);
 }
 
+/* yeni liste oluştur buttonu*/
 .yeniOlustur{
     background-color: rgb(61, 0,0);
     color: white;
@@ -36,10 +93,17 @@ body{
     border-radius: 30px;
     top: 50%; 
     left: 50%; 
-    transform: translate(240%, -50%);
+    transform: translate(240%, 50%);
     cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease; /* button efektli olarak renk değiştirsin diye */
+}
+.yeniOlustur:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+/* izleme listesini düzenlemek için button */
 .duzenle{
     background-color: black;
     color: white;
@@ -47,18 +111,19 @@ body{
     width: 80px;
     top: 50%;
     left: 50%;
-    transform: translate(355%,-105%);
+    transform: translate(355%,220%);
     cursor: pointer;
 }
 
-
+/* filmler ile başlık,button arasındaki ince şerit */
 .cizgi{
     border: none;
     height: 3px;
     background-color: rgb(61, 0,0);
-    margin: 10px 0px;
+    margin: 50px 0px;
 }
 
+/* FİLMLER */
 .movies{
     display: flex; 
     gap: 10px; 
@@ -66,6 +131,7 @@ body{
     flex-wrap: wrap;
     cursor: pointer;
 }
+/* her film için kart tasarımı */
 .movie-card {
     position: relative;
     margin-left: 20px;
@@ -79,6 +145,7 @@ body{
     height: 100%;
     object-fit: cover;
 }
+/* movie kartın sağ alt kısmındaki yıldız */
 .star{
     color: white;
     position: absolute;
@@ -87,8 +154,10 @@ body{
     padding: 5px 8px;
     border-radius: 5px;
     font-size: 1rem;
+    cursor: pointer;
 
 }
+/* film ve dizilerin isimleri (movie kartın sol altı) */
 .paragraph{
     color: white;
     position: absolute;
@@ -97,27 +166,6 @@ body{
     padding: 5px 8px;
     border-radius: 5px;
     font-size: 1rem;
-}
-
-.search-textBox{
-    width: 40vw;
-    height: 4vh;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    top: 50%;
-    left: 50%;
-    transform: translate(70%,-400%);
-}
-
-.search-button{
-    background-color: rgb(61, 0,0);
-    width: 4vw;
-    height: 4vh;
-    border: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(700%,-425%);
     cursor: pointer;
 }
+

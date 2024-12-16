@@ -4,13 +4,80 @@ body{
     overflow: hidden;
 }
 
-#cubuk{
-    position: relative;
+/* HEADER */
+/* header özellikleri z-index headırın üstte kalması için yazılar 
+çakışmasın diye */
+header{
+    background: rgb(61, 0, 0);
+    border-bottom: 5px solid rgb(149, 1, 1);
+    position: fixed;
     width: 100%;
-    height: 60px;
-    background-color: rgb(61, 0,0);
+    z-index: 5;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.nav_links{
+    display: flex;
+}
+
+input[type="text"] {
+    position: relative;
+    width: 100%; 
+    color: rgb(0, 0, 0);
+    border-radius: 0.5rem; 
+    border: 1px solid black; 
+    outline: none; 
+  }
+  
+  @media (min-width: 200px) {
+    input[type="text"] {
+      padding: 0.1rem 1rem; 
+      width: 55%; 
+    }
+  }
+  
+  @media (min-width: 200pxx) {
+    input[type="text"] {
+      width: 40%; 
+    }
+  }
+  
+
+.nav_links li label{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    
+}
+
+.nav_links li a{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.nav_links li a:hover{
+    background:rgb(255, 0, 0) ;
+}
+
+.logo h2 a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+/* textBox ve buttonların bulunduğu orta kısımdaki dikdörtgen */
 #dikdortgen{
     background-color: rgb(61, 0,0);
     position:absolute;
@@ -22,14 +89,7 @@ body{
     transform: translate(-50%,-50%);
 
 }
-#namelabel{
-    color: white;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 2%;
-    left: 5%;
-}
+/*yenişifre belirlemek için ilk textBox */
 #textBox1{
     height: 20px;
     width: 300px;
@@ -41,6 +101,8 @@ body{
     transform: translate(-36%,-150%);
 
 }
+
+/*yenişifre tekrar için textBox*/
 #textBox2{
     height: 20px;
     width: 300px;
@@ -52,6 +114,7 @@ body{
     transform: translate(-36%,0%);
 }
 
+/*Yeni Sifre labelı*/
 #label1{
     font-size:13px ;
     font-family:sans-serif ;
@@ -64,6 +127,7 @@ body{
 
 }
 
+/*Yeni Sifre Tekrar labelı*/
 #label2{
     font-size:13px ;
     font-family:sans-serif ;
@@ -75,6 +139,7 @@ body{
     transform: translate(-215%,20%);
 }
 
+/* Sifre Yenileme labelı*/
 #renewallabel{
     font-size: 18px;
     font-family: sans-serif;
@@ -86,31 +151,47 @@ body{
     transform: translate(-185%,-400%);
 }
 
+/* Onayla Button */ 
 #button1{
+    cursor: pointer;
     padding: 2px 8px;
     font-size: 15px;
-    background-color: white;
-    color: rgb(61, 0,0);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(61, 0,0);
+    color: white;
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(230%,170%);
+    transition: background-color 0.4s ease, transform 0.3s ease; /* button efektli olarak renk değiştirsin diye */
+
 }
 #button1:hover{
-    background-color: rgb(149,1 ,1);
+    cursor: pointer;
+    background-color: rgb(255,0,0);
     color: white;
 }
 
+
+/* Geri Button */ 
 #button2{
+    cursor: pointer;
     padding: 2px 8px;
     font-size: 15px;
+    border: none;
+    border-radius: 5px;
     background-color: rgb(61, 0,0);
     color: white;
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-525%,170%);
+    transition: background-color 0.4s ease, transform 0.3s ease; /* button efektli olarak renk değiştirsin diye */
+
 }
 #button2:hover{
-    color: rgb(149,1 ,1);
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 0, 0);
 }

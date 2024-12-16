@@ -10,18 +10,26 @@
         <link rel="stylesheet" href="watchlist_style.css"/>
     </head>
 
-    <header>
-        <div id="cubuk"></div>
-    </header>
+
     
     <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h2><a href="#">Filmolog</a></h2>
+                </div>
+                <ul class="nav_links">
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#series">Series</a></li>
+                    <li><input type="text" placeholder="Search"></li>
+                </ul>
+            </div>
+        </header>
+
+
         <label id="namelabel">filmolog</label>
         <h1 id="baslik">İzleme Listeniz</h1>
 
-        <form class="search">
-            <input type="text" class="search-textBox" placeholder="  Ara..." />
-            <button type="submit" class="search-button">🔍</button>
-          </form>
         
         <button class="duzenle">
             <i class="fas fa-edit"></i> Düzenle
