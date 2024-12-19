@@ -1,0 +1,106 @@
+*{
+    background-color: black;
+
+}
+
+.dizi1-content{
+
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 175px;
+    color: white;
+
+}
+
+.dizi-photo{
+    width: 300px;
+    height: 400px;
+    margin-left:  100px; 
+}
+.buton{
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+.buton:hover{
+    font-weight: bold;
+    transform: scale(1.3);
+    color:red;
+}
+.butonp{
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+
+.dizi-video{
+
+    width: 710px;
+    margin: left 108px;
+
+}
+.title{
+    color: white;
+    font-weight: bold;
+    font: size 50px;
+}
+.title2{
+    color:white;
+    font-weight: bolder;
+    font: size 35px;
+    margin-left: 100px;
+}
+.title3{    
+    font: size 35px;
+    margin-left: 100px;
+    color:white;
+    font-weight: lighter;
+    margin-top: 30px;
+
+}
+.p{
+    margin-left: 100px;
+    color:white;
+    font-size:larger;
+    margin-top: 50px;
+}
+.photo-text{
+    display: flex;
+    align-items:flex-start;
+    margin-top: 10px;
+    margin-right: 150px;
+    gap: 150px;
+
+}
+.photo{
+    width: 300px;
+    margin-top: 10px;
+
+}
+.button-head{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+
+
+.image1,
+.image2 {
+    width: 300px;
+
+}
+
+.distortion {
+    width: 300px;
+    height: 300px;
+
+}
