@@ -290,28 +290,7 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*menuSign Bitiş*/
-
-
-
-
-
-
-
 
 
 body {
@@ -345,6 +324,7 @@ body {
 
 
 .yeniOlustur {
+    margin-top: 20px;
     background-color: rgb(61, 0, 0);
     color: white;
     width: 25vw;
