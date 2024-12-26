@@ -1,0 +1,24 @@
+.rate{
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+}
+.star{
+    cursor: pointer;
+    color: rgba(8, 1, 1, 0.664);
+
+}
+.selected{
+    color:rgb(109, 6, 6);
+}
+
+#rating-result {
+    font-size: 20px;
+    text-align: center;
+    color:rgb(69, 65, 94);
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+
+
+}
