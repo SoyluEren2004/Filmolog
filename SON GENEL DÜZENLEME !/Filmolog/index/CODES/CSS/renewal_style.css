@@ -14,10 +14,11 @@ o yüzden 0 ve none verdik */
     text-decoration: none;
 }
 
-/*
 body{
-     buraya font-family gelicek font belirlendikten sonra
-}*/
+    /* buraya font-family gelicek font belirlendikten sonra*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
 
 body {
@@ -270,19 +271,6 @@ img {
     /* Yazıları yatayda ortala */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*menuSign Bitiş*/
 
 
@@ -358,24 +346,11 @@ header {
     /* Parlayan efekt */
 }
 
-
-
-
-
-
-
-
 @media (min-width: 100px) {
     input[type="text"] {
         padding: 0.5rem 1rem;
     }
 }
-
-
-
-
-
-
 
 
 @media (min-width: 100px) {
@@ -386,10 +361,10 @@ header {
 
 
 .nav_links li a {
-    margin-inline: 30px;
-    font-size: large;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
     color: #fff;
-    padding: 10px 30px;
     border-radius: 30px;
 
 }
