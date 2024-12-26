@@ -15,10 +15,12 @@ o yüzden 0 ve none verdik */
     text-decoration: none;
 }
 
-/*
+
 body{
-     buraya font-family gelicek font belirlendikten sonra
-}*/
+    /* buraya font-family gelicek font belirlendikten sonra*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
 
 body {
@@ -285,12 +287,13 @@ header {
     align-items: center;
     margin: auto;
     width: 84%;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .nav_links {
     display: flex;
-
+    gap:20px;
+    list-style-type: none;
 }
 
 /* Arama Çubuğu Kutusu */
@@ -352,10 +355,10 @@ header {
 
 
 .nav_links li a {
-    margin-inline: 30px;
-    font-size: large;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
     color: #fff;
-    padding: 10px 30px;
     border-radius: 30px;
 
 }
