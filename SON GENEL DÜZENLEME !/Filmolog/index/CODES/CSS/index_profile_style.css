@@ -45,9 +45,57 @@ body {
 
 
 
-.Arcane_jinx {
-    height: 600px;
-    width: 600px;
+.slider{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.slider img{
+    max-width: 600px;
+    min-width: 600px;
+    max-height: fit-content;
+    max-height: 600px;
+    display: none;
+    align-items: center;
+    object-fit: contain;
+    image-rendering: smooth;
+}
+
+.slider button{
+    position: absolute;
+    font-size: 20px;
+    padding: 15px 15px;
+    background-color:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 80% ;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+
+.caption
+{ 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: rgba(5, 0, 0, 0.61);
+    color: rgba(238, 235, 235, 0.829); 
+    text-align: center; 
+    padding: 10px;
+    border-top:solid;
+    border-bottom: solid;
+    border-radius: 5px;
+    border-color: rgba(56, 1, 1, 0.836);
+
 }
 
 img {
@@ -328,23 +376,11 @@ header {
     /* Parlayan efekt */
 }
 
-
-
-
-
-
-
-
 @media (min-width: 100px) {
     input[type="text"] {
         padding: 0.5rem 1rem;
     }
 }
-
-
-
-
-
 
 
 
