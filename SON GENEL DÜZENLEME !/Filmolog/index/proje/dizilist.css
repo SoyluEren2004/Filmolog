@@ -1,0 +1,415 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+/* projenin her yerinde geçerli olucak önemli yerler 
+kendimiz padding ve marigin vericez aynısı diğerleri içinde geçerli
+o yüzden 0 ve none verdik */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    /* buraya font-family gelicek font belirlendikten sonra*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    /* Sayfa kenar boşluğunu kaldırır */
+    padding: 0;
+    height: 100vh;
+    /* Sayfanın tam yüksekliği */
+    background-image: url('../IMAGES/GenelWallpaper.jpg');
+    /* Arkaplan resmi */
+    background-size: cover;
+    /* Resmi sayfa boyutuna sığacak şekilde ayarlar */
+    background-position: center;
+    /* Resmi merkezde tutar */
+    background-repeat: no-repeat;
+    /* Tekrar etmesini engeller */
+    background-attachment: fixed;
+    /* Arkaplanı sabitler */
+    overflow-y: scroll;
+    /* Sayfanın kaydırılabilir olmasını sağlar */
+
+}
+
+
+img {
+    width: 100%;
+}
+
+.profilLogo {
+    position: relative;
+    display: inline-block;
+    position: relative;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+
+}
+
+/* Profil Logo Hover Effect */
+.profilLogo:hover img {
+    transform: scale(1.3);
+    transition: transform 0.4s ease, filter 0.4s ease, background-color 0.4s ease;
+    filter: drop-shadow(0 0 10px rgba(255, 97, 97));
+    /* Daha yoğun kırmızı ışık efekti */
+    background-color: red;
+    /* Logonun rengini kırmızı yap */
+    border-radius: 50%;
+    /* Arka planı daire yapar */
+
+    /* Kırmızı parlamayı sağlamak için */
+    animation: glow 0.7s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 15px rgba(255, 50, 50));
+    }
+
+    to {
+        filter: drop-shadow(0 0 15px rgba(255, 84, 84));
+    }
+}
+
+
+.profilPopup {
+    display: none;
+    /* Başlangıçta gizli */
+    position: absolute;
+    /* Menü simgesine göre konumlanır */
+    top: 10px;
+    /* Simgenin hemen altına yerleştir */
+    right: 0;
+    background-image: url('../IMAGES/popupBackgorund.png');
+    /* Arka plan resmi */
+    background-size: cover;
+    /* Resmi tam kapla */
+    background-position: center;
+    /* Resmi ortala */
+    width: 400px;
+    /* Genişliği sabit yap */
+    height: 700px;
+    /* Yüksekliği sabit yap */
+    max-width: 600px;
+    /* (Opsiyonel) Ekranın %90'ından fazla büyümesin */
+    max-height: 1200px;
+    /* (Opsiyonel) Maksimum yükseklik */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Gölgelendirme */
+    padding: 10px;
+    /* İçerik boşluğu */
+    z-index: 100;
+    /* Üstte tut */
+    color: white;
+    /* Yazı rengini beyaz yap */
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* Eşit boşluklar */
+    align-items: center;
+    /* Ortalamak için */
+}
+
+/* Popup hover ile açılır */
+.profilLogo:hover .profilPopup {
+    display: block;
+
+    /* Hover sırasında popup görünür */
+}
+
+.popupImageIn {
+    max-width: 80%;
+    /* Yatayda maksimum %80 genişlik */
+    max-height: 400px;
+    /* Yükseklik maksimum 400px */
+    height: auto;
+    /* Orantıyı korur */
+    display: block;
+    /* Yatayda ortalar */
+    align-items: center;
+    /* Resimlerin boyutu */
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40%;
+    margin-left: 40%;
+    margin-top: 10%;
+    /* Resimler arasında boşluk */
+
+}
+
+.logo {
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    display: flex;
+    /* İçerikleri yatay hizalamak için */
+    align-items: center;
+    /* Dikey ortalama */
+}
+
+.Logo {
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+}
+
+
+/*MENU SIGN ICIN BUYUME VE PARLAMA EFECTI*/
+
+
+/* Menü İkonu Stili */
+.menuSign {
+    display: flex;
+    position: relative;
+    width: 160px;
+    height: auto;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Parlama Efekti */
+.menuSign:hover img {
+    filter: drop-shadow(0 0 7px rgba(255, 255, 255, 2)) drop-shadow(0 0 50px rgba(255, 255, 255, 1.5));
+    transform: scale(1.2);
+    /* Büyüme efekti */
+}
+
+.menuPopup {
+    display: none;
+    /* Başlangıçta gizli */
+    position: absolute;
+    /* Menü simgesine göre konumlanır */
+    top: 50px;
+    /* Simgenin hemen altına yerleştir */
+    left: 0;
+    background-image: url('../IMAGES/popupBackgorund.png');
+    /* Arka plan resmi */
+    background-size: cover;
+    /* Resmi tam kapla */
+    background-position: center;
+    /* Resmi ortala */
+    width: 400px;
+    /* Genişliği sabit yap */
+    height: 700px;
+    /* Yüksekliği sabit yap */
+    max-width: 600px;
+    /* (Opsiyonel) Ekranın %90'ından fazla büyümesin */
+    max-height: 1200px;
+    /* (Opsiyonel) Maksimum yükseklik */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Gölgelendirme */
+    padding: 10px;
+    /* İçerik boşluğu */
+    z-index: 100;
+    /* Üstte tut */
+    color: white;
+    /* Yazı rengini beyaz yap */
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* Eşit boşluklar */
+    align-items: center;
+    /* Ortalamak için */
+}
+
+/* Popup hover ile açılır */
+.menuSign:hover .menuPopup {
+    display: flex;
+    /* Hover sırasında popup görünür */
+}
+
+/* Popup içeriği */
+.menuPopup img {
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    color: #ffffff;
+    /* Yazı rengi */
+    text-align: center;
+    /* Yazıları yatayda ortala */
+}
+
+/*menuSign Bitiş*/
+
+/* ------  HEADER ------- */
+
+/* header özellikleri z-index headırın üstte kalması için yazılar 
+çakışmasın diye */
+header {
+    background: #3D0000;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 84%;
+    padding: 10px 20px;
+}
+
+.nav_links {
+    display: flex;
+    gap:20px;
+    list-style-type: none;
+}
+
+/* Arama Çubuğu Kutusu */
+.search-textBox {
+    width: 530px;
+    height: 52px;
+    /* Yüksekliği artırdım */
+    border-radius: 100px;
+    /* Köşeler yuvarlak */
+    border: 2px solid #ddd;
+    /* Hafif gri kenar */
+    outline: none;
+    /* Kenar odak çizgisi yok */
+    padding: 0px 50px;
+    /* İçeriden boşluk artırıldı */
+    font-size: 16px;
+    /* Yazı boyutunu büyüttüm */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge */
+    transition: all 0.3s ease;
+    /* Geçiş efekti */
+    margin-right: 0px;
+}
+
+/* Arama Kutusu Odaklanınca */
+.search-textBox:focus {
+    border: 2px solid #f5c518;
+    /* Sarı kenarlık */
+    box-shadow: 0 0 15px rgba(245, 197, 24, 0.8);
+    /* Parlayan efekt */
+}
+
+@media (min-width: 100px) {
+    input[type="text"] {
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+
+@media (min-width: 100px) {
+    input[type="text"] {
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+.nav_links li a {
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    border-radius: 30px;
+
+}
+
+.nav_links li a:hover {
+    background: rgb(255, 0, 0);
+    transition: all .4s ease-in-out;
+}
+
+/* ANA SAYFA */
+
+/* responsive tasarımda daha rahat mobil görünümü ayarlıyoruz */
+
+
+.btn {
+    background: rgb(61, 0, 0);
+    padding: 12px 18px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid rgb(61, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background: rgb(255, 0, 0);
+    letter-spacing: 5px;
+}
+
+.sıralama {
+    margin-left: 25px;
+    color: #000000;
+    padding: 5px 15px;
+    list-style: none;
+}
+
+.sıralama li {
+    display: flex;
+    /* Flexbox ile resim ve metni yan yana yerleştirir */
+    align-items: center;
+    /* Dikeyde ortalar */
+    margin-top: 5px;
+    font-size: x-large;
+}
+
+.sıralama li img {
+    width: 50px;
+    /* Görselin genişliği */
+    height: 50px;
+    /* Görselin yüksekliği */
+    margin-right: 10px;
+    /* Resim ile metin arasına boşluk ekler */
+}
+
+
+.image{
+    width: 250px;
+}
+.list-item{
+    margin-top: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+    list-style-type: none;
+    
+
+}
+
+.h2{
+
+    margin-top: 120px;
+}
+.rating{
+    margin-top: 30px;
+    color: black;
+
+}
+.h1{
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.767);
+    display: inline-block;
+    padding-top: 100px;
+    padding-left: 50px;
+
+
+}
+
+.image{
+    display: flex;
+    border-radius: 10px;
+    margin-top: 15px;
+}
