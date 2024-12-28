@@ -1,0 +1,49 @@
+.image{
+    width: 250px;
+}
+.list-item{
+    margin-top: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+    list-style-type: none;
+    
+
+}
+
+.h2{
+
+    margin-top: 120px;
+}
+.rating{
+    margin-top: 30px;
+
+
+}
+.h1{
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.767);
+    display: inline-block;
+    padding: 50px;
+    padding-top: 120px;
+    padding-bottom:  20px;
+    padding-left: 150px;
+
+
+}
+
+h1:hover { 
+    color: rgba(59, 2, 2, 0.911); 
+    background-color: #410000; 
+    background-image:url('img/dizifilm/31AdlJU3f5L._AC_UF1000\,1000_QL80_.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.image{
+    display: flex;
+    border-radius: 10px;
+    margin-top: 15px;
+}
